@@ -16,7 +16,7 @@ function Products() {
   }, []);
 
   const fetchProducts = async () => {
-    try{
+    try {
       const response = await HTTP.get("api/products");
       console.log(response.data);
       if (response.data.error) {
